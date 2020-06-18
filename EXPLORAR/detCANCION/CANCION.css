@@ -38,19 +38,65 @@
     #paredon{display: block;
         background-color: black;
         height: 45px;
-        }
+    }
+
+    #datos{
+        grid-template-columns: 1fr 2fr;
+        margin-top: 10px;
+        display: grid;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        background-color: rgb(141, 137, 137);
+    }
+
+    #imgsong{margin-left: 6px;
+    margin-top: 14px;
+    margin-bottom: auto;
+}
+
+#ndlc {
+    color: black;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+
+#namesong {
+    color: rebeccapurple;
+    font-size: 11px;
+    padding-left: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#nameartista {
+    color: rebeccapurple;
+    font-size: 12px;
+    padding-left: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#duration {
+    color: rebeccapurple;
+    font-size: 12px;
+    padding-left: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#namealb {
+    color: rebeccapurple;
+    font-size: 11px;
+    padding-left: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#reproducir{margin-left: 10px;}
+#reproducirpc{display: none;}
+
+
 
     @media (min-width:321px){
 
-        a {
-            color: hsl(0, 0%, 0%);
-            font-size: 15px;
-            text-align: center;
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            text-decoration: none;
-            padding-right: 11px;
-        }
         
         #opciones {
             color: hsl(0, 0%, 0%);
@@ -61,23 +107,24 @@
             text-decoration: none;
             margin-right: 11px;
         }
+
+        #reproducir {
+            margin-left: 37px;
+        }
     }
     
     @media (min-width:376px){
     
-       
-    
-        a {
-            color: hsl(0, 0%, 0%);
-            font-size: 15px;
-            text-align: center;
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            text-decoration: none;
-            padding-right: 11px;
+        #reproducir {
+            display: none;
         }
-    
-    
+
+        #reproducirpc {
+            display: block;
+            height: 92px;
+            width: 405px;
+            margin-left: 10px;
+        }
     }
     
     @media (min-width:426px){
@@ -86,25 +133,30 @@
             width: 50px;
         }
     
-      
-        a {
-            color: hsl(0, 0%, 0%);
-            font-size: 20px;
-            text-align: center;
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            text-decoration: none;
-            padding-right: 20px;
-        }
-    
         ul {
             display: flex;
             margin: auto;
             margin-left: auto;
         }
-    
+        
+        #reproducirpc {
+            display: block;
+            height: 92px;
+            width: 749px;
+            margin-left: 10px;
+            margin-bottom: 20px;
+        }
 
-    
+        #datos {
+            grid-template-columns: 1fr 4fr;
+            margin-top: 17px;
+            display: grid;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            background-color: rgb(141, 137, 137);
+        }
+            
     }
     
     @media (min-width:769px){
@@ -112,22 +164,30 @@
         #logo {
             width: 50px;
         }
-    
-    
-        a {
-            color: hsl(0, 0%, 0%);
-            font-size: 20px;
-            text-align: center;
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            text-decoration: none;
-            padding-right: 20px;
+
+        #datos {
+            grid-template-columns: 1fr 7fr;
+            margin-top: 17px;
+            display: grid;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            background-color: rgb(141, 137, 137);
         }
     
         ul {
             display: flex;
             margin: auto;
             margin-left: auto;
+        }
+
+
+        #reproducirpc {
+            display: block;
+            height: 92px;
+            width: 1005px;
+            margin-left: 10px;
+            margin-bottom: 20px;
         }
     
        
