@@ -1,6 +1,7 @@
 *{margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
     }
     body{background-color: black;}
 
@@ -40,19 +41,17 @@
         height: 45px;
     }
 
-    #datos{
-        grid-template-columns: 1fr 2fr;
-        margin-top: 10px;
-        display: grid;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: 10px;
+    #datos {
+        display: flex;
         background-color: rgb(141, 137, 137);
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
-
-    #imgsong{margin-left: 6px;
+    #imgsong{margin-left: 14px;
     margin-top: 14px;
     margin-bottom: auto;
+    margin-right: 14px;
 }
 
 #ndlc {
@@ -89,9 +88,15 @@
     padding-left: 15px;
     font-family: 'Poppins', sans-serif;
 }
-
-#reproducir{margin-left: 10px;}
+#reproductor{width: 100%;}
+#reproducir {
+    margin-left: 10px;
+    margin-right: auto;
+    width: max-content;
+}
 #reproducirpc{display: none;}
+
+footer{margin-top: 20px;}
 
 
 
@@ -108,9 +113,7 @@
             margin-right: 11px;
         }
 
-        #reproducir {
-            margin-left: 37px;
-        }
+
     }
     
     @media (min-width:376px){
@@ -119,13 +122,16 @@
             display: none;
         }
 
+        #reproductorpc{width: 100%;}
+
         #reproducirpc {
-            display: block;
+            display: flex;
+            width: -webkit-fill-available;
             height: 92px;
-            width: 405px;
+            margin-right: 10px;
             margin-left: 10px;
         }
-        footer{margin-top: 50px;}
+
     }
     
     @media (min-width:426px){
@@ -139,25 +145,11 @@
             margin: auto;
             margin-left: auto;
         }
-        
-        #reproducirpc {
-            display: block;
-            height: 92px;
-            width: 749px;
-            margin-left: 10px;
-            margin-bottom: 20px;
+        #paredon{display: block;
+            background-color: black;
+            height: 50px;
         }
-
-        #datos {
-            grid-template-columns: 1fr 4fr;
-            margin-top: 17px;
-            display: grid;
-            margin-left: 10px;
-            margin-right: 10px;
-            margin-bottom: 10px;
-            background-color: rgb(141, 137, 137);
-        }
-            
+                    
     }
     
     @media (min-width:769px){
@@ -166,33 +158,13 @@
             width: 50px;
         }
 
-        #datos {
-            grid-template-columns: 1fr 7fr;
-            margin-top: 17px;
-            display: grid;
-            margin-left: 10px;
-            margin-right: 10px;
-            margin-bottom: 10px;
-            background-color: rgb(141, 137, 137);
-        }
+
     
         ul {
             display: flex;
             margin: auto;
             margin-left: auto;
         }
-
-
-        #reproducirpc {
-            display: block;
-            height: 92px;
-            width: 1005px;
-            margin-left: 10px;
-            margin-bottom: 20px;
-        }
-
-        footer{margin-top: 240px;}
-
     
        
     }
