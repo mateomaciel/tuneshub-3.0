@@ -1,10 +1,10 @@
-*{margin: 0;
+ *{margin: 0;
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
     }
     body{background-color: black;}
-  
+
     #header{
         display: flex;
         justify-content: space-between;
@@ -14,17 +14,17 @@
         z-index: 30;
         width: 100%;
     }
-    
+
     ul {
             display: flex;
             margin: auto;
             margin-left: 5px;
     }
-    
+
     #opciones:hover{
         background-color: rebeccapurple;
     }
-    
+
     #opciones {
         color: hsl(0, 0%, 0%);
         font-size: 13px;
@@ -34,11 +34,74 @@
         text-decoration: none;
         margin-right: 8px;
     }
-        
+
     #logo{width: 40px;}
-  
+ */
+
+
+.gallery {
+  background: #EEE;
+}
+
+.gallery-cell {
+  width: 100%;
+  height: 200px;
+  margin-right: 10px;
+  background-image: url("https://concepto.de/wp-content/uploads/2018/09/rock-e1536060138214.jpg");
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+
+/* big buttons, no circle */
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+  background: transparent;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+}
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
+}
+
+/* position dots in gallery */
+.flickity-page-dots {
+  bottom: 0px;
+}
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: white;
+}
+
     @media (min-width:321px){
-  
+
         a {
             color: hsl(0, 0%, 0%);
             font-size: 15px;
@@ -48,7 +111,7 @@
             text-decoration: none;
             padding-right: 11px;
         }
-        
+
         #opciones {
             color: hsl(0, 0%, 0%);
             font-size: 14px;
@@ -59,11 +122,11 @@
             margin-right: 11px;
         }
     }
-    
+
     @media (min-width:376px){
-    
-       
-    
+
+
+
         a {
             color: hsl(0, 0%, 0%);
             font-size: 15px;
@@ -73,17 +136,17 @@
             text-decoration: none;
             padding-right: 11px;
         }
-    
-    
+
+
     }
-    
+
     @media (min-width:426px){
-    
+
         #logo {
             width: 50px;
         }
-    
-      
+
+
         a {
             color: hsl(0, 0%, 0%);
             font-size: 20px;
@@ -93,24 +156,24 @@
             text-decoration: none;
             padding-right: 20px;
         }
-    
+
         ul {
             display: flex;
             margin: auto;
             margin-left: auto;
         }
-    
-  
-    
+
+
+
     }
-    
+
     @media (min-width:769px){
-    
+
         #logo {
             width: 50px;
         }
-    
-    
+
+
         a {
             color: hsl(0, 0%, 0%);
             font-size: 20px;
@@ -120,22 +183,22 @@
             text-decoration: none;
             padding-right: 20px;
         }
-    
+
         ul {
             display: flex;
             margin: auto;
             margin-left: auto;
         }
-    
-       
+
+
     }
-    
+
     @media (min-width:1025px){}
-  
+
   /* hasta ak el header*/
-  
+
    #gif{width: 700px;}
-  
+
    .video-container {
     position: absolute;
     top: 0;
@@ -143,25 +206,24 @@
     height: 242px;
     width: 320px;
   }
-  
+
   .principal {
     position: relative;
     z-index: 20;
     margin-top: 150px;
   }
-  
-  
+
+
   #slogan {
     font-family: 'Poppins', sans-serif;
     font-size: 22px;
     color: rebeccapurple;
   }
-  
+
   #resultados{display: none;}
-  
-  
-  
+
+
+
   /* ak empieza el footer*/
-  
-  .site-footer{background-color: rgb(39, 39, 39);}
-  
+
+   .site-footer{background-color: rgb(39, 39, 39);} */

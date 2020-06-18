@@ -5,6 +5,8 @@ var resultado = objetoQuery.get('busqueda');
 fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=" + resultado)
 .then(function(response){
     return response.json()
+
+
 })
 
 .then(function(dato){
