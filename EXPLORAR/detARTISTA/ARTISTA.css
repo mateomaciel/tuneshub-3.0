@@ -190,6 +190,15 @@
             margin: auto;
             margin-left: auto;
         }
+
+        #frame {
+            width: 985px;
+        }
+
+        #boton {
+            background-color: gray;
+            width: 985px;
+        }
     
        
     }

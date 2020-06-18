@@ -125,6 +125,7 @@
             width: 405px;
             margin-left: 10px;
         }
+        footer{margin-top: 50px;}
     }
     
     @media (min-width:426px){
@@ -189,6 +190,9 @@
             margin-left: 10px;
             margin-bottom: 20px;
         }
+
+        footer{margin-top: 240px;}
+
     
        
     }
