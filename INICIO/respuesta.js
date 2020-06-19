@@ -22,7 +22,6 @@ answer.forEach(function(dataCancion){
     =true&width=700&height=350&color=ff0000&layout=dark&size=medium&type=tracks&id=` + dataCancion.id +`&app_id=1"></iframe></div>`
 
 if (answer == "null") {
-//ak falta agregar que cuando sea null no se muestre nada
 
 
 

@@ -1,4 +1,4 @@
-  { margin: 0;
+ * { margin: 0;
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -62,8 +62,50 @@
 
      width: auto;
      max-width: 100%;
+     margin-top: 20px;
 
 }
+
+#track{height: 92px;}
+
+#resultados {
+    margin-top: 20px;
+    display: none;
+}
+
+#track {
+    height: 92px;
+    width: -webkit-fill-available;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 242px;
+    width: max-content
+}
+
+#gif{width: 700px;}
+
+
+
+.principal {
+  position: relative;
+  z-index: 20;
+  margin-top: 150px;
+}
+
+
+#slogan {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  color: rebeccapurple;
+}
+
+#resultados{display: none;}
+
+
 
 
 
@@ -89,6 +131,7 @@
             text-decoration: none;
             margin-right: 11px;
         }
+
     }
 
     @media (min-width:376px){
@@ -158,6 +201,22 @@
             margin-left: auto;
         }
 
+        .video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 313px;
+            width: 807px;
+            display: none;
+        }
+
+        .principal {
+            position: relative;
+            z-index: 20;
+            margin-top: 22px;
+            margin-left: 10px;
+        }
+
 
     }
 
@@ -192,31 +251,6 @@
           }
 
   /* hasta ak el header*/
-
-   #gif{width: 700px;}
-
-   .video-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 242px;
-    width: 320px;
-  }
-
-  .principal {
-    position: relative;
-    z-index: 20;
-    margin-top: 150px;
-  }
-
-
-  #slogan {
-    font-family: 'Poppins', sans-serif;
-    font-size: 22px;
-    color: rebeccapurple;
-  }
-
-  #resultados{display: none;}
 
 
 
