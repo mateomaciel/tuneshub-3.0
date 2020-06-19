@@ -1,4 +1,4 @@
- *{margin: 0;
+  { margin: 0;
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -39,66 +39,34 @@
  */
 
 
-.gallery {
-  background: #EEE;
+
+ .gallery {
+   background: none;
+ }
+
+ .gallery-cell {
+   width: 100%;
+   height: 200px;
+   margin-right: 10px;
+   background: transparent;
+   counter-increment: gallery-cell;
+ }
+
+ .gallery-cell img {
+
+ display: block;
+     margin: auto;
+
+     height: auto;
+     max-height: 100%;
+
+     width: auto;
+     max-width: 100%;
+
 }
 
-.gallery-cell {
-  width: 100%;
-  height: 200px;
-  margin-right: 10px;
-  background-image: url("https://concepto.de/wp-content/uploads/2018/09/rock-e1536060138214.jpg");
-  counter-increment: gallery-cell;
-}
-
-/* cell number */
-.gallery-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(gallery-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
-}
 
 
-/* big buttons, no circle */
-.flickity-prev-next-button {
-  width: 100px;
-  height: 100px;
-  background: transparent;
-}
-/* arrow color */
-.flickity-prev-next-button .arrow {
-  fill: white;
-}
-.flickity-prev-next-button.no-svg {
-  color: white;
-}
-.flickity-prev-next-button:hover {
-  background: transparent;
-}
-/* hide disabled button */
-.flickity-prev-next-button:disabled {
-  display: none;
-}
-
-/* position dots in gallery */
-.flickity-page-dots {
-  bottom: 0px;
-}
-/* white circles */
-.flickity-page-dots .dot {
-  width: 12px;
-  height: 12px;
-  opacity: 1;
-  background: transparent;
-  border: 2px solid white;
-}
-/* fill-in selected dot */
-.flickity-page-dots .dot.is-selected {
-  background: white;
-}
 
     @media (min-width:321px){
 
@@ -193,7 +161,36 @@
 
     }
 
-    @media (min-width:1025px){}
+    @media (min-width:1025px) {
+      #logo {
+          width: 50px;
+      }
+
+
+      a {
+          color: hsl(0, 0%, 0%);
+          font-size: 20px;
+          text-align: center;
+          font-family: 'Poppins', sans-serif;
+          margin: 0;
+          text-decoration: none;
+          padding-right: 20px;
+      }
+
+      ul {
+          display: flex;
+          margin: auto;
+          margin-left: auto;
+      }
+
+        #gif {
+
+            width: 100vh;
+              height: 100%;
+
+              }
+
+          }
 
   /* hasta ak el header*/
 
