@@ -1,4 +1,8 @@
+<<<<<<< HEAD
   { margin: 0;
+=======
+{ margin: 0;
+>>>>>>> 2027a550384fb566bfba9f7e6687b8bd138296e8
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -36,7 +40,11 @@
     }
 
     #logo{width: 40px;}
+<<<<<<< HEAD
  */
+=======
+
+>>>>>>> 2027a550384fb566bfba9f7e6687b8bd138296e8
 
 
 
@@ -189,7 +197,10 @@
               height: 100%;
 
               }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2027a550384fb566bfba9f7e6687b8bd138296e8
           }
 
   /* hasta ak el header*/
@@ -223,4 +234,8 @@
 
   /* ak empieza el footer*/
 
+<<<<<<< HEAD
    .site-footer{background-color: rgb(39, 39, 39);} */
+=======
+  .site-footer{background-color: rgb(39, 39, 39);} */
+>>>>>>> 2027a550384fb566bfba9f7e6687b8bd138296e8

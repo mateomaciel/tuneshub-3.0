@@ -15,7 +15,7 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/' + Genr
         imgdelG.innerHTML += `<img id="imggen" src="${datos.picture_medium}" alt="">`;
 
         let namedelG = document.querySelector('#nombregenero');
-       namedelG.innerHTML += `<h3 id="namegen" style="color: blueviolet; margin: auto;margin-left: 10px;">${datos.name}</h3>`
+       namedelG.innerHTML += `<h3 id="namegen"">${datos.name}</h3>`
 
 
 
@@ -46,9 +46,9 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/'+ Genre
 
         contar = contar + 1;
         namedelAR.innerHTML += `<div id=esqueleto><a href="../detARTISTA/ARTISTA.html?id=${dataArtist.id}" id="artistas" style="text-decoration: none;" >
-        <div   style="display: flex;margin-top:20px">
-        <img style="border-radius: 50%; width:50px ;" src="${dataArtist.picture_medium}" alt="">
-        <h3 style="color: blueviolet; margin: auto;margin-left: 10px;">${dataArtist.name}</h3>
+        <div   style="display: flex;">
+        <img style="border-radius: 25%; width:50px ;" src="${dataArtist.picture_medium}" alt="">
+        <h3 id="nombre">${dataArtist.name}</h3>
         </div></a></div>`
 
 

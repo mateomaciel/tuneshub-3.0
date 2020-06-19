@@ -10,7 +10,7 @@
         background-color: rgb(107, 107, 107);
         border-radius: 0%;
         position: fixed;
-        z-index: 30;
+        z-index: 100;
         width: 100%;
     }
     
@@ -40,26 +40,62 @@
     background-color: black;
     height: 45px;
     }
-    #diez{margin-left: 10px;}
 
+
+    #diez {
+    margin-left: 10px;
+    position: relative;
+    z-index: 30;
+}
     #artistas{margin-top: 10px;}
 
+    #fotogenero {
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+    }
 
+    #namegen {
+        position: relative;
+        z-index: 20;
+        color: white;
+        font-family: 'Fredoka One', cursive;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-right: 10px;
+        text-decoration-line: blink;
+        text-align: center;
+        font-size: 30px;
+        text-decoration-style: double;
+        text-transform: uppercase;
+        background-color: #212020b5;
+        margin-bottom: 5px;
+
+    }
+
+    #imggen {
+        height: 613px;
+        width: 100%;
+    }
+    #esqueleto {
+        background-color: #212020b5;
+        margin-right: 10px;
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+
+    #nombre{
+        color: rgb(161, 161, 161);
+         margin: auto;
+         margin-left: 10px;
+        }
     
 
 
 
     @media (min-width:321px){
 
-        a {
-            color: hsl(0, 0%, 0%);
-            font-size: 15px;
-            text-align: center;
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            text-decoration: none;
-            padding-right: 11px;
-        }
+
         
         #opciones {
             color: hsl(0, 0%, 0%);
@@ -74,18 +110,7 @@
     
     @media (min-width:376px){
     
-       
-    
-        a {
-            color: hsl(0, 0%, 0%);
-            font-size: 15px;
-            text-align: center;
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            text-decoration: none;
-            padding-right: 11px;
-        }
-    
+
     
     }
     
@@ -95,21 +120,31 @@
             width: 50px;
         }
     
-      
-        a {
-            color: hsl(0, 0%, 0%);
-            font-size: 20px;
-            text-align: center;
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            text-decoration: none;
-            padding-right: 20px;
-        }
+
     
         ul {
             display: flex;
             margin: auto;
             margin-left: auto;
+        }
+
+        #esqueleto {
+            background-color: #212020b5;
+            margin-right: 10px;
+            padding-bottom: 10px;
+        }
+
+        #imggen {
+            height: 575px;
+            width: 100%;
+        }
+
+        #diez {
+            margin-left: 10px;
+            position: relative;
+            z-index: 30;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
         }
     
 
@@ -122,22 +157,26 @@
             width: 50px;
         }
     
-    
-        a {
-            color: hsl(0, 0%, 0%);
-            font-size: 20px;
-            text-align: center;
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            text-decoration: none;
-            padding-right: 20px;
-        }
+
     
         ul {
             display: flex;
             margin: auto;
             margin-left: auto;
         }
+
+        #imggen {
+            height: 713px;
+            width: 100%;
+        }
+
+        footer{    background-color: gray;
+            position: relative;
+            z-index: 20;
+            margin-top: 143px;
+        }
+
+        #nombregenero{margin-top: 20px;}
     
        
     }
