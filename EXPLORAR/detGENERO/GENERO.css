@@ -93,20 +93,6 @@
 
 
 
-    @media (min-width:321px){
-
-
-        
-        #opciones {
-            color: hsl(0, 0%, 0%);
-            font-size: 14px;
-            text-align: center;
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            text-decoration: none;
-            margin-right: 11px;
-        }
-    }
     
     @media (min-width:376px){
     

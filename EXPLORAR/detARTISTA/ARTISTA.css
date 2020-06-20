@@ -85,30 +85,6 @@
     #topfive{display: none;}
 
 
-
-    @media (min-width:321px){
-
-        a {
-            color: hsl(0, 23%, 8%);
-            font-size: 15px;
-            text-align: center;
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            text-decoration: none;
-            padding-right: 11px;
-        }
-        
-        #opciones {
-            color: hsl(0, 0%, 0%);
-            font-size: 14px;
-            text-align: center;
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            text-decoration: none;
-            margin-right: 11px;
-        }
-
-    }
     
     @media (min-width:376px){
     
