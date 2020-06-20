@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="INICIO.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;1,600&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"> </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"> </script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- Modificado Santi 2020/06/19 18hs-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- Fin Modificado Santi 2020/06/19 18hs-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
+    <title>tuneshub</title>
+    <link rel="icon" type="image/png" href="../EXPLORAR/tunestunes.png" />
+    <link rel="stylesheet" href="resultado.css">
+</head>
+
+<body>
+    <nav id="header">
+        <div>
+            <img id="logo" src="../EXPLORAR/tunestunes.png" alt="logo" />
+        </div>
+
+        <ul style="list-style-type: none;">
+            <li>
+                <a id="opciones" style="color: aliceblue;" href="resultado.html"> INICIO</a>
+            </li>
+            <li>
+                <a id="opciones"  href="../EXPLORAR/EXPLORAR.html">EXPLORAR</a>
+            </li>
+            <li>
+                <a id="opciones" href="">PLAYLIST</a>
+            </li>
+            <li>
+                <a id="opciones" href="../CONTACTO/CONTACTO.html">CONTACTO</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div style="height: 40px;">basio</div>
+
+    <div>
+
+        <div class="video-container">
+            <video id="gif" autoplay loop muted>
+                <source src="video.mp4" type="video/mp4" />
+            </video>
+        </div>
+
+        <div class="principal">
+            <h1 id="slogan">Que la musica te tranforme</h1>
+            <form action="resultado.html" method="GET">
+                <input type="text" name="busqueda" id="buscador">
+                <input type="submit" value="Search" id="boton-busqueda">
+            </form>
+        </div>
+    </div>
+
+
+    <!--aca tenemos que poner el carrousell-->
+    
+<!-- FIN MODIF SANTI-->
+<div class="gallery js-flickity">
+  <div class="gallery-cell"> <img src="https://www.telesurtv.net/__export/1563050626734/sites/telesur/img/2019/07/13/rockx.jpg_1718483347.jpg" alt="Rock"> </div>
+  <div class="gallery-cell"> <img src="https://www.doctajazz.com/wp-content/uploads/2018/01/aprender-improvisar-jazz-piano-instrumentos.jpg" alt="Jazz"> </div>
+  <div class="gallery-cell"> <img src="https://i2.wp.com/qepd.news/wp-content/uploads/2020/02/ruido-maniana.jpg?w=600&ssl=1" alt="Punk"> </div>
+
+</div>
+<div class="container text-center">
+  <!-- Modificado Santi 2020/06/19 18hs-->
+  <div class="container mt-4 text-center">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card border border-warning" id="lista1" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">cancion numumero 1</li>
+              <li class="list-group-item">cancion dos </li>
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+            </ul>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card border border-primary rounded-lg" id="lista2" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">cancion numumero 1</li>
+              <li class="list-group-item">cancion dos</li>
+              <li class="list-group-item">tres</li>
+              <li class="list-group-item">cuatro</li>
+              <li class="list-group-item">album</li>
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Cras justo odio</li>
+            </ul>
+            </div>                            
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">cancion numumero 1</li>
+              <li class="list-group-item">cancion dos </li>
+              <li class="list-group-item">album 34</li>
+              <li class="list-group-item">pop</li>
+              <li class="list-group-item">phl collins</li>
+            </ul>
+            </div>                            
+        </div>
+    </div>
+  </div>
+    <div id="resultados" style="display: block;"></div>
+
+
+    <footer class="site-footer">
+        <div class="container" style="margin-top: 5px;">
+            <p class="text-justify" style="color:rgb(211, 6, 159); margin-bottom: 10px;">TUNESHUB le agradece
+                cordialmente a DEEZER por proveernos su API</p>
+            <a href="https://www.deezer.com/es/">
+                <img src="../deezer.jpg" alt="" style="width:100px">
+            </a>
+
+        </div>
+        <hr>
+        <!--
+        <div class="container text-center mt-2 style="padding-top: 10px;">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+                <p class="copyright-text" style="color:rgb(199, 199, 199); margin-bottom: 10px;"><b>Mariano
+                        Maisterrena-Mateo Maciel-Santiago Ruiz</b></p>
+            </div>
+        </div>
+        -->
+
+        <div class="container text-center mt-2 ">
+            
+            <p class="copyright-text" style="color:rgb(199, 199, 199);">
+                <b>Mariano Maisterrena - Mateo Maciel - Santiago Ruiz</b></p>
+            
+        </div>
+        </hr>
+        <div>
+            <p
+                style="color: white; text-transform: uppercase;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;margin-bottom: 10px;">
+                Nuestras redes</p>
+            <i class="fab fa-instagram" style="color: rebeccapurple; font-size: 40px; margin-left: 10px;"></i>
+            <i class="fab fa-facebook" style="color: rebeccapurple; font-size: 40px;margin-left: 10px;"></i>
+            <i class="fab fa-twitter" style="color: rebeccapurple; font-size: 40px;margin-left: 10px;"></i>
+            <i class="fab fa-reddit" style="color: rebeccapurple; font-size: 40px;margin-left: 10px;"></i>
+
+
+        </div>
+
+
+
+    </footer>
+
+
+</body>
+
+</html>

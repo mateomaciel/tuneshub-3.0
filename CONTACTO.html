@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Indicamos el uso de la pagina a nivel occidental-->
+    <meta charset="utf-8">
+    <!--la hoja de estilo es exclusivamente para esta pagina-->
+    <link href= "CONTACTO.css" rel= "stylesheet"> <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Contactenos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;1,600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <title>tuneshub</title>
+    <link rel="icon" type="image/png" href="../EXPLORAR/tunestunes.png">
+</head>
+
+
+    <body style="background-color: black;">
+
+        <nav id="header">
+            <div >
+                <img id="logo" src="../EXPLORAR/tunestunes.png" alt="logo">
+            </div>
+
+            <ul id="aaa" style="list-style-type: none;">
+                <li >
+                    <a id="opciones" href="../INICIO/index.html"> INICIO</a>
+                </li>
+                <li>
+                    <a id="opciones" href="../EXPLORAR/EXPLORAR.html">EXPLORAR</a>
+                </li>
+                <li>
+                    <a id="opciones"  href="">PLAYLIST</a>
+                </li>
+                <li>
+                    <a id="opciones" href="/CONTACTO/CONTACTO.html"  style="color: white;">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+
+       <div class="container">
+        <div class="jumbotron">
+        <!--definición de los scripts necesarios-->
+        <div class="container mt-4 text-center">
+            <!--encabezadode la pagina-->
+            <h1>
+                Esperamos Tus Comentarios
+
+            </h1>
+            <p>
+                Pedinos Tus Canciones Favoritas
+            </p>
+            <p>
+                <em>Resolvemos En 4 Horas</em>
+            </p>
+        </div>
+      
+        <div class="container text-center">
+
+        <form name="formcontactos" action="enviar.html" method="GET">
+
+
+            <div class="row">
+                <div class="col-md-3 text-right">
+                    <label type="text">Nombre Y Apellido</label> 
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        
+                        <input type="text" class="form-control"  aria-describedby="emailHelp"></input>
+                        <small id="emailHelp" class="form-text text-muted">Complete Sus Datos</small>
+                    </div>
+                </div>
+                <div class="call-md-3">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 text-right"> 
+                    <label for="exampleInputEmail1">Email address</label>
+                </div>
+                <div class="col-md-6">
+
+            <div class="form-group">
+                
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">Nunca Revelaremos tu Direccion de E-Mail.</small>
+              </div>
+            </div>
+                <div class="call-md-3">
+            </div>
+        </div>
+
+
+            <div class="form-group mt-4">
+              <label type="textarea">Sugerencias</label>
+              <textarea name="comentarios" rows="5" cols="120" placeholder="Escribe Aquí Tus Comentarios"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary"  onclick="javascript:alert('Gracias Por Contactarnos');">Enviar</button>
+          </form>
+        </div>
+            <!-- <div>
+            acceso a redes sociales
+        </div> -->
+        </div>
+    </div>
+    </body>
+
+</html>
