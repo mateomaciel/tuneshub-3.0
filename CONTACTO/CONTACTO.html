@@ -2,18 +2,22 @@
 <html>
 
 <head>
+    <!-- Indicamos el uso de la pagina a nivel occidental-->
     <meta charset="utf-8">
+    <!--la hoja de estilo es exclusivamente para esta pagina-->
     <link href= "CONTACTO.css" rel= "stylesheet"> <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Contactenos</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;1,600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <title>tuneshub</title>
     <link rel="icon" type="image/png" href="../EXPLORAR/tunestunes.png">
-    <title>Contactenos</title>
 </head>
 
 
@@ -32,7 +36,7 @@
                     <a id="opciones" href="../EXPLORAR/EXPLORAR.html">EXPLORAR</a>
                 </li>
                 <li>
-                    <a id="opciones"  href="../PLAYLIST/PLAYLIST.html">PLAYLIST</a>
+                    <a id="opciones"  href="">PLAYLIST</a>
                 </li>
                 <li>
                     <a id="opciones" href="/CONTACTO/CONTACTO.html"  style="color: white;">CONTACTO</a>
@@ -43,7 +47,7 @@
        <div class="container">
         <div class="jumbotron">
         <!--definición de los scripts necesarios-->
-        <div>
+        <div class="container mt-4 text-center">
             <!--encabezadode la pagina-->
             <h1>
                 Esperamos Tus Comentarios
@@ -56,52 +60,52 @@
                 <em>Resolvemos En 4 Horas</em>
             </p>
         </div>
-        <div center>
-            <!--formulario de contacto-->
-            <form name="formcontactos" action="enviar.html" method="GET">
-                <!-- Table border="5" bgcolor=""  cellpadding="5" cellspacing="5"> -->
-                <table class="table table-responsive"  border="5">
-                    <tr>
-                        <td width="25%">Apellido Y Nombre </td>
-                        <td><input type="text"  size="55" maxlength="30" value="" name="nombre" placeholder="nom y apel"></td>
-                    </tr>
 
-                    <!-- <tr> <td width="15%" bgcolor="red">one</td> </tr>
-                    <tr> <td width="15%" bgcolor="blue">two</td> </tr> -->
-                    <tr>
-                        <td>Correo Electronico </td>
-                        <td><input type="email" size="55" maxlength="30" value="" name="correoe" placeholder="pepe@gmail.com"></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Tu Sugerencia
-                        </td>
-                        <td>
-                            <textarea name="comentarios" rows="5" cols="55" placeholder="Escribe Aquí Tus Comentarios"></textarea>
-                        </td>
-                    </tr>
-                    <tr><!-- <td><input type="submit" value="Enviar información" name="boton2"></td> -->
-                    <td>
-                        <button class="button" type="submit" name="boton1" onclick="javascript:alert('Gracias Por Contactarnos');">Enviar</button>
-                    </td></tr>
-                    <!--<td>njkkosaso</td>
-                    <td><ul>
-                        <li>Esto</li>
-                        <li>Lo otro</li>
-                        <li>Lo de más allá</li>
-                       </ul></td>
-                       <td>
-                        <ul>
-                            <li>Esto</li>
-                            <li>Lo otro</li>
-                            <li>Lo de más allá</li>
-                           </ul>
-                       </td> -->
-                </Table>
-               <!-- <tr><td>ñlcdskdsjdfhudahuadshuadshudafhu</td></tr> -->
-            </form>
+        <div class="container text-center">
+
+        <form name="formcontactos" action="enviar.html" method="GET">
+
+
+            <div class="row">
+                <div class="col-md-3 text-right">
+                    <label type="text">Nombre Y Apellido</label>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+
+                        <input type="text" class="form-control"  aria-describedby="emailHelp"></input>
+                        <small id="emailHelp" class="form-text text-muted">Complete Sus Datos</small>
+                    </div>
+                </div>
+                <div class="call-md-3">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 text-right">
+                    <label for="exampleInputEmail1">Email address</label>
+                </div>
+                <div class="col-md-6">
+
+            <div class="form-group">
+
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">Nunca Revelaremos tu Direccion de E-Mail.</small>
+              </div>
+            </div>
+                <div class="call-md-3">
+            </div>
         </div>
-       <!-- <div>
+
+
+            <div class="form-group mt-4">
+              <label type="textarea">Sugerencias</label>
+              <textarea name="comentarios" rows="5" cols="120" placeholder="Escribe Aquí Tus Comentarios"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary"  onclick="javascript:alert('Gracias Por Contactarnos');">Enviar</button>
+          </form>
+        </div>
+            <!-- <div>
             acceso a redes sociales
         </div> -->
         </div>
