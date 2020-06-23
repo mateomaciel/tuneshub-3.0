@@ -1,8 +1,9 @@
  * { margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     }
+
     body{background-color: black;}
 
     #header{
@@ -78,12 +79,29 @@
     width: -webkit-fill-available;
 }
 
-.video-container {
+.image-container {
     position: absolute;
     top: 0;
     left: 0;
-    height: 242px;
-    width: max-content
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
 }
 
 #gif{width: 700px;}
@@ -98,17 +116,12 @@
 
 
 #slogan {
-  font-family: 'Poppins', sans-serif;
-  font-size: 22px;
-  color: rebeccapurple;
+  color: white;
+font-family: 'New Rocker', cursive;
+size: 34px;
 }
 
 #resultados{display: none;}
-
-
-
-
-
 
     @media (min-width:321px){
 
@@ -201,14 +214,7 @@
             margin-left: auto;
         }
 
-        .video-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 313px;
-            width: 807px;
-            display: none;
-        }
+
 
         .principal {
             position: relative;
@@ -242,12 +248,7 @@
           margin-left: auto;
       }
 
-        #gif {
 
-            width: 100vh;
-              height: 100%;
-
-              }
           }
 
   /* hasta ak el header*/
