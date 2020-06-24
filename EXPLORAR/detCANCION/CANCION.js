@@ -44,6 +44,8 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/' + albu
         
         if (result = true){
             console.log(albumId)
-            localStorage.setItem(albumId)
+            localStorage.setItem("cancion",albumId)
+            var pepe = localStorage.getItem("cancion")
+            console.log(pepe)
 
         }}
