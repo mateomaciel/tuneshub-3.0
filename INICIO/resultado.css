@@ -114,6 +114,16 @@
   margin-top: 150px;
 }
 
+.carritop {
+
+  -webkit-tap-highlight-color: transparent;
+      -webkit-user-select: none;
+
+      user-select: none;
+      margin-top: 250px;
+}
+
+
 
 #slogan {
   color: white;
