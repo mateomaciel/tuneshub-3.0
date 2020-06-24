@@ -17,7 +17,7 @@ console.log (answer)
 let tracks = document.querySelector('#resultados')
 
 answer.forEach(function(dataCancion){
-    tracks.innerHTML += `<div>
+    tracks.innerHTML += `<div id="despliegue">
     <iframe id="track" scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist
     =true&width=700&height=350&color=ff0000&layout=dark&size=medium&type=tracks&id=` + dataCancion.id +`&app_id=1"></iframe></div>`
 
