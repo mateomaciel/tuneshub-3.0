@@ -37,3 +37,13 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/' + albu
     .catch(function(error){
         console.error(error);
     })
+
+
+    function myFunction(){
+        var result = confirm("deseas agregar esta cancion a tu playlist")
+        
+        if (result = true){
+            console.log(albumId)
+            localStorage.setItem(albumId)
+
+        }}

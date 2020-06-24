@@ -10,7 +10,12 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
-
+      <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
     <title>tuneshub</title>
     <link rel="icon" type="image/png" href="../EXPLORAR/tunestunes.png" />
@@ -25,50 +30,56 @@
 
         <ul style="list-style-type: none;">
             <li>
-                <a id="opciones" style="color: aliceblue;" href="resultado.html"> INICIO</a>
+                <a id="opciones" style="color: aliceblue;" href="index.html"> INICIO</a>
             </li>
             <li>
                 <a id="opciones"  href="../EXPLORAR/EXPLORAR.html">EXPLORAR</a>
             </li>
             <li>
-                <a id="opciones" href="">PLAYLIST</a>
+                <a id="opciones" href="../PLAYLIST/PLAYLIST.html">PLAYLIST</a>
             </li>
             <li>
                 <a id="opciones" href="../CONTACTO/CONTACTO.html">CONTACTO</a>
             </li>
         </ul>
     </nav>
+
     <div style="height: 40px;">basio</div>
-    
+
     <div>
-        
-        <div class="video-container">
-            <video id="gif" autoplay loop muted>
-                <source src="video.mp4" type="video/mp4" />
-            </video>
+
+        <div class="image-container">
+
+            <img src="https://concepto.de/wp-content/uploads/2018/09/rock-e1536060138214.jpg" alt="rockimage">
+
         </div>
-        
+
         <div class="principal">
             <h1 id="slogan">Que la musica te tranforme</h1>
             <form action="resultado.html" method="GET">
                 <input type="text" name="busqueda" id="buscador">
-                <input type="submit" value="EXPLOREMOS" id="boton-busqueda">
+                <input type="submit" value="Search" id="boton-busqueda">
             </form>
-            <div id="resultados" style="display: block;"></div>
         </div>
+
     </div>
+<div class="carritop">
 
-    <!--aca tenemos que poner el carrousell-->
-
-    <h2>disfruta de la musiquita</h2>
-    <!-- Flickity HTML init -->
     <div class="gallery js-flickity">
-      <div class="gallery-cell"></div>
-      <div class="gallery-cell"></div>
-      <div class="gallery-cell"></div>
+      <div class="gallery-cell"> <img src="https://www.telesurtv.net/__export/1563050626734/sites/telesur/img/2019/07/13/rockx.jpg_1718483347.jpg" alt="Rock"> </div>
+      <div class="gallery-cell"> <img src="https://www.doctajazz.com/wp-content/uploads/2018/01/aprender-improvisar-jazz-piano-instrumentos.jpg" alt="Jazz"> </div>
+      <div class="gallery-cell"> <img src="https://i2.wp.com/qepd.news/wp-content/uploads/2020/02/ruido-maniana.jpg?w=600&ssl=1" alt="Punk"> </div>
+
     </div>
+  </div>
 
 
+
+
+<div class="container text-center">
+
+
+    <div id="resultados" style="display: block;"></div>
 
 
     <footer class="site-footer">
@@ -80,15 +91,16 @@
             </a>
 
         </div>
-        <hr />
-        <div class="container" style="padding-top: 10px;">
-            <div class="col-md-8 col-sm-6 col-xs-12">
-                <p class="copyright-text" style="color:rgb(199, 199, 199); margin-bottom: 10px;"><b>Mariano
-                        Maisterrena-Mateo Maciel-Santiago Ruiz</b></p>
-            </div>
-        </div>
-        <hr />
+        <hr>
 
+
+        <div class="container text-center mt-2 ">
+
+            <p class="copyright-text" style="color:rgb(199, 199, 199);">
+                <b>Mariano Maisterrena - Mateo Maciel - Santiago Ruiz</b></p>
+
+        </div>
+        </hr>
         <div>
             <p
                 style="color: white; text-transform: uppercase;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;margin-bottom: 10px;">
