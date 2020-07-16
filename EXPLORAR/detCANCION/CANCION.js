@@ -9,6 +9,7 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/' + albu
     })
     .then(function(datos){
 
+        let can = [datos]
         console.log(datos)
 
         let imgdelS = document.querySelector('#imgcancion');
@@ -33,19 +34,30 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/' + albu
        let repropc = document.querySelector('#reproductorpc');
        repropc.innerHTML += `<iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=${datos.id}&app_id=1" id="reproducirpc" width="700" height="350"></iframe>`
     
-    })
+       
+})
+
     .catch(function(error){
         console.error(error);
     })
 
 
-    function myFunction(){
-        var result = confirm("deseas agregar esta cancion a tu playlist")
-        
-        if (result = true){
-            console.log(albumId)
-            localStorage.setItem("cancion",albumId)
-            var pepe = localStorage.getItem("cancion")
-            console.log(pepe)
+let añadir =document.querySelector("#botoncito");
+console.log(añadir)
 
-        }}
+
+añadir.addEventListener("click", function(){
+    if (window.localStorage.getItem("cancion") === null){
+
+        window.localStorage.setItem("cancion", JSON.stringify(can))
+        
+    }else{
+        let cancionObjeto = JSON.parse(window.localStorage.getItem("cancion"))
+        
+        cancionObjeto.push(datos)
+
+        window.localStorage.setItem("cancion", JSON.stringify(cancionObjeto))
+        
+        console.log(cancionObjeto);
+    }
+})

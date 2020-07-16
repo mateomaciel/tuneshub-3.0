@@ -38,8 +38,23 @@
 
     #logo{width: 40px;}
 
+ #agregar-a-playlist {
+
+color: green;
+margin-top: 30px;
+
+}
+
+.slogann {
+margin-top: 40px;
+
+}
 
 
+#slogan {
+text-align: center;
+
+}
 
  .gallery {
    background: none;
@@ -66,6 +81,13 @@
      margin-top: 20px;
 
 }
+
+.carrolin{
+margin-top: 280px;
+
+}
+
+
 
 #track{height: 92px;}
 
@@ -114,14 +136,7 @@
   margin-top: 150px;
 }
 
-.carritop {
 
-  -webkit-tap-highlight-color: transparent;
-      -webkit-user-select: none;
-
-      user-select: none;
-      margin-top: 250px;
-}
 
 
 
@@ -160,6 +175,8 @@ size: 34px;
             margin-right: 11px;
         }
 
+
+
     }
 
     @media (min-width:376px){
@@ -175,6 +192,7 @@ size: 34px;
             text-decoration: none;
             padding-right: 11px;
         }
+
 
 
     }
@@ -262,6 +280,8 @@ size: 34px;
           margin: auto;
           margin-left: auto;
       }
+
+
 
 
           }
